@@ -1,0 +1,132 @@
+.u-center-text { text-align: center !important; }
+
+.u-margin-bottom-big { 
+  margin-bottom: 8rem !important;  
+
+  @include respond(tab-port) {
+    margin-bottom: 5rem !important;
+  }
+}
+.u-margin-bottom-medium { 
+  margin-bottom: 4rem !important; 
+
+  @include respond(tab-port) {
+    margin-bottom: 3rem !important;
+  }
+}
+.u-margin-bottom-small { margin: 2rem  0 !important; }
+// .u-margin-right { margin-right: 2.6rem !important;}
+.u-margin-bottom-big { margin-bottom: 6rem !important; }
+.u-margin-top-big { margin-top: 8rem !important; }
+.u-margin-top-huge { margin-top: 10rem !important; }
+
+.c-white{
+  color: white !important;
+}
+
+.d-flex-center{
+  display: flex;
+  justify-content: center;
+
+  @include respond(phone){
+    display: block;
+  }
+
+  @include respond(tab-port){
+    display: block;
+  }
+  
+}
+
+.d-flex-col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  height: 36rem !important;
+}
+
+.d-flex-row{
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconLinkedin{
+  width: 5.5rem;
+
+}
+
+.iconLinkedinLink{
+  width: 5rem !important;
+  height: 2rem;
+}
+
+.bg-video-opacity{
+  opacity: .3 !important;
+}
+
+.btn-arrow{
+  font-size: 5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  color: rgb(255, 187, 0);
+  text-shadow:0 .1rem .7rem rgba(0, 0, 0, 0.493);
+  z-index: 5;
+  transition: all .3s;
+
+  @include respond(phone) {
+    right: 2.8rem;
+}
+}
+
+.margin-center{
+  margin:  0 auto;
+}
+
+
+
+
+.d-flex-col-1{
+  display: flex;
+  width: 80% !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  padding: 2rem !important;
+  background-color: rgb(180, 180, 180)(255, 255, 255) !important;
+  height: 25rem !important;
+  transform: skewX(12deg) !important;
+ 
+
+  img{
+    width:100% ;
+    height: 37rem;
+    transform: skewX(-12deg) !important;
+  
+  }
+}
+
+.img-height{
+  width:90% !important ;
+  height: 18rem !important;
+
+  @include respond(phone){
+    height: 13rem !important;
+  }
+}
+
+b{
+  font-weight: bold;
+}
+
+.main-header{
+  display: flex;
+  align-items: center;
+  width: 170vh;
+}
+
+.avropa{
+  width: 17%;
+  height: 18rem !important;
+}
