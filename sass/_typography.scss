@@ -8,7 +8,7 @@ body {
 }
 
 .heading-primary {
-    color: $color-white;
+    color: rgb(22, 73, 212);
     text-transform: uppercase;
 
     backface-visibility: hidden;
@@ -22,31 +22,34 @@ body {
         font-weight: 600;
         letter-spacing: 1.5rem;
         margin-bottom:2rem ;
-        text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.418);
-
+        text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.109);
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
 
-
         @include respond(tab-port) { 
             letter-spacing: 1rem;
-            font-family: 5rem;
             font-size: 4.5rem;
         }
 
         @include respond(phone) { 
             letter-spacing: 1rem;
-            font-family: 5rem;
-            font-size: 2.5rem;
+            font-size: 2rem !important;
         }
+
+        @include respond(tab-land) { 
+           
+            font-size: 4vh!important;
+        }
+
+
         /* animation-delay: 3s; 
         animation-iteration-count: 3; */
     }
     &--sub {
         display: block;
         font-size: 2rem;
-        text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.418);
+        text-shadow: 0 .5rem .5rem rgba(0, 0, 0, 0.164);
         font-weight: bold;
         letter-spacing: .1rem;
     

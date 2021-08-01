@@ -8,7 +8,7 @@
         width: 7rem;
         border-radius: 50%;
         position: fixed;
-        top: 5rem;
+        top: 7rem;
         right: 6rem;
         z-index: 2000;
         box-shadow: 0 1rem 2rem rgba($color-black, .4);
@@ -30,9 +30,9 @@
         border-radius: 50%;
         position: fixed;
         opacity: .9;
-        top: 6rem;
+        top: 7rem;
         right: 6.5rem;
-        background-image: radial-gradient($color-secondary-light, $color-secondary-dark,);
+        background-image: radial-gradient(#6d3a81,#33183d,);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
@@ -78,14 +78,13 @@
         &:link, 
         &:visited {
             display: inline-block;
-            font-size: 2.7rem;
-            font-weight: bold;
-            padding: 1rem 2rem;
+            font-size: 2.4rem;
+            font-weight: 500;
+            padding: .6rem 2rem;
             text-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.37);
             color: $color-white;
             text-decoration: none;
             text-transform: uppercase;
-
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 220%;
             transition: all .4s;

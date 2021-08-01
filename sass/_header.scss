@@ -1,15 +1,16 @@
 .header{
-    height: 85vh;
+    display: flex;
+    height: 95rem !important;
     background-image: linear-gradient(
         to right bottom,
-        rgba(rgb(130, 44, 179), 1),
-        rgba(rgb(90, 23, 121), 1));
+        rgba(
+            #d396e9, .9),
+        rgba(#bb67da, .1));
     background-size: cover;
     background-position: top; 
     position:relative;
 
     @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-        clip-path: polygon(100% 0, 100% 100%, 82% 100%, 4% 100%, 0 0);
         height: 95vh;
     }
 
@@ -18,53 +19,75 @@
             only screen and (min-width: 125em) {
         background-image: linear-gradient(
             to right bottom,
-            rgba(rgb(130, 44, 179), 1),
-        rgba(rgb(90, 23, 121), 1));
+            rgba(#43274d, .9),
+            rgba(#43274d, .1));
+    }
+    @include respond(tab-port) { 
+       height: 90rem !important;
     }
     @include respond(phone) { 
-        clip-path: polygon(100% 0, 100% 100%, 82% 100%, 4% 100%, 0 0);
     }
 
+    //FİRST LOGO
     &__logo-box {
+        display: flex;
+        height: 30rem;
+        width: 90%;
+        position: absolute;
+        top: 34% !important;
+        left: 4% !important;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
         position: absolute;
         top: 1rem;
         left: 1rem;
         padding-top:2rem ;
         padding-left:2rem ;
-    }
 
-    &__logo-box-1 {
-        display: flex;
-        width: 190vh;
-        position: absolute;
-        justify-content: space-evenly;
-        bottom: 1rem;
-        right: 1rem;
-        margin-top:2rem ;
-        padding-top:2rem ;
-        padding-left:2rem ;
+        img{
+            width: 250px;
+            height: 50%;
+            border-radius:50% ;
+
+        }
+
+        @include respond (phone){
+            width: 72% !important;
+            left: 4rem !important;
+        }
+
+        @include respond (tap-port){
+            width: 90%;
+            left: 5rem !important;
+        }
+
+        @include respond (tap-land){
+            width: 85%;
+            top: 30% !important;
+        }
     }
 
     &__logo {
         // filter:  brightness(0) invert(1);
-        max-width: 100%;
-        height:17vh;
-        // margin-right:10rem;
-        transform: scale(1);
+        width: 32rem;
+        position: absolute;
+        top: -10%;
+        height:22.5rem;
 
         @include respond (tab-land){
-            height:15vh;
-            margin-right:8rem;
+            height:13rem;
+            top: -4%;
         }
 
         @include respond (tab-port){
-            height:13vh;
-            margin-right:3rem;
+            top: -1%;
+            height:11rem;
         }
 
         @include respond (phone){
-            height:7rem;
-            margin-right:3rem;
+            width: 25rem !important;
+            height:12rem;
         }
 
         &:hover{
@@ -73,10 +96,226 @@
 
        
     }
+
+    .headerLogo{
+        font-size: 3.8rem;
+        color: rgb(41, 94, 238);
+        font-weight: bold;
+
+        span{
+            color: rgb(228, 112, 77); 
+        }
+    }
+
+    .descLogo{
+        text-align: center;
+        line-height: 1.1;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: rgb(24, 24, 24);
+    }
+
+    .descLogo3{
+        width: 100%;
+        margin-left:15rem ;
+        text-align: center;
+        color: rgb(41, 94, 238);
+        font-size: 1.7rem;
+
+
+      
+    }
+
+    //SECOND LOGOS
+    &__logo-box-1 {
+        display: flex;
+        width: 95%;
+        position: absolute;
+        align-items: center;
+        top: 0% !important;
+        left: 4%;
+        justify-content: flex-start;
+        margin-top:2rem ;
+        padding-top:1rem ;
+        padding-left:2rem ;
+
+        @include respond (phone){
+            width: 95%;
+            flex-wrap: wrap;
+           top: 4% !important;
+        }
+
+        
+    }
+    .logo-1{
+        // filter:  brightness(0) invert(1);
+        width: 10% ;
+        height:auto !important;
+        margin-right:2rem ;
+        @include respond (tab-land){
+            width: 11rem !important;
+            height:auto;
+            margin-right:2rem ;
+        }
+
+        @include respond (tab-port){
+            width: 8rem !important;
+            height:auto;
+        }
+
+        @include respond (phone){
+            width: 5rem !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+
+    .logo-2 {
+        // filter:  brightness(0) invert(1);
+        width: 15% !important;
+        height:auto !important;
+
+        @include respond (tab-land){
+            width: 20rem !important;
+            height:auto !important;
+        }
+
+        @include respond (tab-port){
+            width: 14rem !important;
+            height:auto;
+        }
+
+        @include respond (phone){
+            width: 8rem !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+    .logo-3 {
+        // filter:  brightness(0) invert(1);
+        width: 17% !important;
+        height:auto !important;
+
+        @include respond (tab-land){
+            width: 20rem !important;
+            height:auto !important;
+        }
+
+        @include respond (tab-port){
+            width: 17rem !important;
+            height:auto;
+        }
+
+        @include respond (phone){
+            width: 8rem !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+    .logo-4 {
+        // filter:  brightness(0) invert(1);
+        width: 22rem;
+        height:auto;
+
+        @include respond (tab-land){
+            width: 15rem !important;
+            height:auto !important;
+        }
+
+        @include respond (tab-port){
+            width: 14rem !important;
+            height:8rem;
+            margin-top:1.4rem ;
+        }
+
+        @include respond (phone){
+            width: 9rem !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+    .logo-7 {
+        // filter:  brightness(0) invert(1);
+        width: 8%;
+        height:auto;
+        margin-right:2rem ;
+
+        @include respond (tab-land){
+            width: 7% ;
+            height:auto !important;
+            margin-right:1rem ;
+        }
+
+        @include respond (tab-port){
+            width: 7% !important;
+            height:auto;
+            margin-top:1.4rem ;
+        }
+
+        @include respond (phone){
+            width: 10% !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+    .logo-5 {
+        // filter:  brightness(0) invert(1);
+        width: 15%;
+        height:auto;
+
+        @include respond (tab-land){
+            width: 15rem !important;
+            height:auto !important;
+            margin-right:1rem ;
+        }
+
+        @include respond (tab-port){
+            width: 14rem !important;
+            height:auto;
+        }
+
+        @include respond (phone){
+            width: 7rem !important;
+            height:auto;
+        }
+
+        &:hover{
+            transform: scale(1.1);
+        }
+
+       
+    }
+
+   
     &__text-box {
         /* To center element and it be responsive */
         position: absolute;
-        top: 45%;
+        top: 68%;
         left: 50%;
         font-weight: bold !important;
         transform: translate(-50%, -50%);
@@ -85,8 +324,5 @@
     }
 }
 
-    // .heading-primary--sub{
-    //     width: 70%;
-    //     margin:  0 auto;
-    // }
+
 

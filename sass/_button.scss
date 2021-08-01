@@ -33,12 +33,12 @@
         box-shadow: 0  .5rem 1rem rgba($color-black,0.2);
     }
     &--white {
-        background-color: $color-white;;
-        color: $color-grey-dark;
+        background-color: rgb(248, 93, 93);
+        color: white;
         font-weight: bold;
 
         &::after {
-            background-color: $color-white;
+            background-color:  rgb(248, 93, 93);
         }
     }
     &--green {
@@ -46,7 +46,7 @@
         color: $color-white;
 
         &::after {
-            background-color: $color-white;
+            background-color: $color-tertiary-dark;
         }
     }
 

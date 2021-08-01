@@ -2,7 +2,6 @@
     max-width: $grid-width;
     //To center a block element within another block element
     margin: 0 auto;
-
     //To apply vertical gutter on all rows except for the last child
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;

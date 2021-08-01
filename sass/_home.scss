@@ -9,12 +9,12 @@
 }
 .section-features {
     padding: 12rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-secondary-light, 0.8),
-        rgba($color-secondary-dark, 0.8)), 
-         url(../img/nat-7.jpg);
-         clip-path: polygon(94% 3%, 100% 100%, 82% 100%, 0 100%, 0 0);
+    // background-image: linear-gradient(
+    //     to right bottom,
+    //     rgba($color-secondary-light, 0.8),
+    //     rgba($color-secondary-dark, 0.8)), 
+    //      url(../img/nat-7.jpg);
+    //      clip-path: polygon(94% 3%, 100% 100%, 82% 100%, 0 100%, 0 0);
         
     background-size: cover;
     // transform: skewY(-7deg);
@@ -72,8 +72,8 @@
 .border-1{
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-secondary-light, 0.8),
-        rgba($color-secondary-dark, 0.8)), 
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8)), 
          url(../img/nat-7.jpg);
          clip-path: polygon(94% 3%, 100% 100%, 82% 100%, 0 100%, 0 0);
          background-size: cover;
