@@ -4,8 +4,8 @@
     background-image: linear-gradient(
         to right bottom,
         rgba(
-            #d396e9, .9),
-        rgba(#bb67da, .1));
+            #f4f0e9, .9),
+        rgba(#bea690, .7));
     background-size: cover;
     background-position: top; 
     position:relative;
@@ -229,7 +229,8 @@
     }
     .logo-4 {
         // filter:  brightness(0) invert(1);
-        width: 22rem;
+        width: 15rem;
+        margin: 0 2rem;
         height:auto;
 
         @include respond (tab-land){
@@ -321,6 +322,9 @@
         transform: translate(-50%, -50%);
         text-align: center;
       
+        a{
+            background-color: #cf489a;
+        }
     }
 }
 
