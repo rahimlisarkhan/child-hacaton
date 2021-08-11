@@ -1,11 +1,11 @@
 .header{
     display: flex;
-    height: 95rem !important;
+    height: 75rem !important;
     background-image: linear-gradient(
         to right bottom,
         rgba(
-            #f4f0e9, .9),
-        rgba(#bea690, .7));
+            #f4f0e9, .6),
+        rgba(#bea690, .7)),url('/img/usaqhakaton.png');
     background-size: cover;
     background-position: top; 
     position:relative;
@@ -31,30 +31,34 @@
     //FİRST LOGO
     &__logo-box {
         display: flex;
-        height: 30rem;
-        width: 90%;
+        height: 25rem;
+        width: 25rem;
         position: absolute;
-        top: 34% !important;
-        left: 4% !important;
+        top: 28% !important;
+        left: 5% !important;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        padding-top:2rem ;
-        padding-left:2rem ;
-
+        background-color: 
+        #caa290;
+        overflow: hidden;
+        border-radius: 50%;
         img{
-            width: 250px;
-            height: 50%;
-            border-radius:50% ;
+            width: 90%;
+            height: auto;
 
+            // border-radius:50% ;
+
+            @include respond (phone){
+                width:6rem;
+                height: 100%;
+            }
         }
 
         @include respond (phone){
-            width: 72% !important;
-            left: 4rem !important;
+            left: 30% !important;
+            width: 20rem;
+            height: 20rem;
         }
 
         @include respond (tap-port){
@@ -316,7 +320,7 @@
     &__text-box {
         /* To center element and it be responsive */
         position: absolute;
-        top: 68%;
+        top: 58%;
         left: 50%;
         font-weight: bold !important;
         transform: translate(-50%, -50%);

@@ -10,7 +10,9 @@
     font-size: $default-font-size;
     transform: skewX(-12deg);
  
-
+    img{
+        object-fit: contain;
+    }
 
     @include respond(tab-port) {
         width: 100%;
@@ -80,7 +82,7 @@
 
     &:hover &__img {
         transform: translateX(1rem) scale(1.1);
-        filter: blur(3px) brightness(80%);
+        // filter: blur(3px) brightness(80%);
     }
     
 }

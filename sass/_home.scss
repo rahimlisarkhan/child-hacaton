@@ -42,8 +42,8 @@
    
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8));
+        rgba($color-tertiary-light, 0.8),
+        rgba($color-tertiary-dark, 0.8));
         clip-path: polygon(100% 0, 100% 100%, 82% 100%, 4% 100%, 0 0);
     
     @include respond(tab-port) {
