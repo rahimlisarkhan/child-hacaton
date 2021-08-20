@@ -20,7 +20,7 @@
         padding-left: 7rem;
     }
     @include respond(phone) {
-        height: 26rem;
+        height: 31rem;
        transform: skewX(0);
     }
    
@@ -83,7 +83,7 @@
     }
 
     &:hover &__img {
-        transform: translateX(1rem) scale(1.1);
+        transform: scale(1.15);
         // filter: blur(3px) brightness(80%);
     }
     

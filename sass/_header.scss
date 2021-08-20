@@ -148,9 +148,15 @@
         }
 
         @include respond (phone){
-            width: 95%;
+            width: 100%;
             flex-wrap: wrap;
-           top: 4% !important;
+           top: 6% !important;
+           left: 0 !important;
+           justify-content: flex-start;
+
+           img{
+            margin: 0 25px;
+        }
         }
 
         
@@ -225,7 +231,7 @@
         }
 
         @include respond (phone){
-            width: 8rem !important;
+            width: 20rem !important;
             height:auto;
         }
 
@@ -253,8 +259,7 @@
         }
 
         @include respond (phone){
-            width: 9rem !important;
-            height:auto;
+            width: 11rem !important;
         }
 
         &:hover{
@@ -282,8 +287,9 @@
         }
 
         @include respond (phone){
-            width: 10% !important;
+            width: 11rem !important;
             height:auto;
+            margin-left: 55px !important;
         }
 
         &:hover{
@@ -309,8 +315,11 @@
         }
 
         @include respond (phone){
-            width: 7rem !important;
+            width: 19rem !important;
             height:auto;
+            margin-left: 45px !important;
+
+          
         }
 
         &:hover{

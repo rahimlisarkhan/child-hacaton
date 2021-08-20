@@ -1,5 +1,4 @@
 body {
-    font-family: "Lato", sans serif;
     font-weight: 400;
     line-height: 1.7;
     color: $color-grey-dark;
@@ -92,7 +91,6 @@ body {
 .heading-tertiary {
     font-size: $default-font-size;
     font-weight:bold;
-    font-family:'Roboto', sans-serif !important;
     text-transform: uppercase;
 }
 .paragraph {
