@@ -144,7 +144,7 @@
         padding-left:2rem ;
 
         img{
-            margin: 0 20px;
+            // margin: 0 20px;
         }
 
         @include respond (phone){
@@ -231,7 +231,7 @@
         }
 
         @include respond (phone){
-            width: 20rem !important;
+            width: 15rem !important;
             height:auto;
         }
 
@@ -259,7 +259,7 @@
         }
 
         @include respond (phone){
-            width: 11rem !important;
+            width: 9rem !important;
         }
 
         &:hover{
@@ -287,9 +287,10 @@
         }
 
         @include respond (phone){
-            width: 11rem !important;
+            width: 9rem !important;
             height:auto;
-            margin-left: 55px !important;
+            margin-right: 0;
+            margin-left: 45px !important;
         }
 
         &:hover{
@@ -315,7 +316,7 @@
         }
 
         @include respond (phone){
-            width: 19rem !important;
+            width: 16rem !important;
             height:auto;
             margin-left: 45px !important;
 
